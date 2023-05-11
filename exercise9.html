@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>exercise9</title>
+</head>
+
+<body>
+
+    <label for="userType">Please enter a text box value (student or parent):</label>
+    <input type="text" id="userType">
+    <button onclick="redirectToPage()">Submit</button>
+
+    <script>
+        function redirectToPage() {
+            var userType = document.getElementById("userType").value;
+            if (userType == "student") {
+                window.location.href = "https://m1328226140.github.io/ICT441-1-/courses.html";
+            } else if (userType == "Parents") {
+                window.location.href = "https://m1328226140.github.io/ICT441-1-/index.html";
+            } else {
+                alert("The input is incorrect, please re-enter")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
